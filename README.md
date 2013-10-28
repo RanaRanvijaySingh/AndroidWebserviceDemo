@@ -13,18 +13,28 @@ All you need to do is to use few objects to initialize and send request , like H
 	HttpEntity entity = response.getEntity();
 
 ----------------------------------------------------------------------------------------------------------------------------
+
 	Step 1: Give the permission in the manifest file .
 	Step 2: Create a simple Textview in the layout.
 	Step 3: Create the main Class to use the objects.
 
 ____________________________________________________________________________________________________________________________________________________________
 ####Step 1: Give the permission in the manifest file .
+=======
+Step 1: Give the permission in the manifest file .
+Step 2: Create a simple Textview in the layout.
+Step 3: Create the main Class to use the objects.
+
+____________________________________________________________________________________________________________________________________________________________
+Step 1: Give the permission in the manifest file .
 
      <uses-permission android:name="android.permission.INTERNET"/>
      <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 ____________________________________________________________________________________________________________________________________________________________
 
 ####Step 2: Create a simple Textview in the layout.
+=======
+Step 2: Create a simple Textview in the layout.
 
     <TextView
         android:id="@+id/textViewResponse"
@@ -34,6 +44,12 @@ ________________________________________________________________________________
 ____________________________________________________________________________________________________________________________________________________________
 
 ####Step 3: Create the main Class to use the objects.
+
+		String readTwitterFeed = readTwitterFeed();
+	
+		private String readTwitterFeed() {
+=======
+Step 3: Create the main Class to use the objects.
 
 		String readTwitterFeed = readTwitterFeed();
 	
@@ -59,5 +75,3 @@ ________________________________________________________________________________
 		}
 		return sBuilder.toString();
 	}
-
-
