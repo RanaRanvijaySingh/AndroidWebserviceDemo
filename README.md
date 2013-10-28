@@ -1,6 +1,8 @@
 AndroidWebserviceDemo
 =====================
+
 This project demonstrate how to use the webservice in your project.Accessing the web service is very simple thing.All you need to do is to use few objects to initialize and send request , like HttpGet , HttpRequest , HttpResponse.
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 	HttpClient client = new DefaultHttpClient();
