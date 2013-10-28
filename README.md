@@ -2,14 +2,16 @@ AndroidWebserviceDemo
 =====================
 This project demonstrate how to use the webservice in your project.
 Accessing the web service is very simple thing.
+
 All you need to do is to use few objects to initialize and send request , like HttpGet , HttpRequest , HttpResponse .
 ----------------------------------------------------------------------------------------------------------------------------
-HttpClient client = new DefaultHttpClient();
-HttpGet get = new HttpGet("http://api.androidhive.info/contacts/");
+
+	HttpClient client = new DefaultHttpClient();
+	HttpGet get = new HttpGet("http://api.androidhive.info/contacts/");
 	HttpResponse response = client.execute(get);
 	StatusLine statusLine = response.getStatusLine();
 	int statusCode = statusLine.getStatusCode();
-HttpEntity entity = response.getEntity();
+	HttpEntity entity = response.getEntity();
 
 ----------------------------------------------------------------------------------------------------------------------------
 Step 1: Give the permission in the manifest file .
