@@ -2,10 +2,6 @@ AndroidWebserviceDemo
 =====================
 This project demonstrate how to use the webservice in your project.
 Accessing the web service is very simple thing.
-<<<<<<< HEAD
-=======
-
->>>>>>> bea9cd82b1fd9c20758980f45bde9123a0cd6fab
 All you need to do is to use few objects to initialize and send request , like HttpGet , HttpRequest , HttpResponse .
 ----------------------------------------------------------------------------------------------------------------------------
 
@@ -17,7 +13,7 @@ All you need to do is to use few objects to initialize and send request , like H
 	HttpEntity entity = response.getEntity();
 
 ----------------------------------------------------------------------------------------------------------------------------
-<<<<<<< HEAD
+
 	Step 1: Give the permission in the manifest file .
 	Step 2: Create a simple Textview in the layout.
 	Step 3: Create the main Class to use the objects.
@@ -31,17 +27,14 @@ Step 3: Create the main Class to use the objects.
 
 ____________________________________________________________________________________________________________________________________________________________
 Step 1: Give the permission in the manifest file .
->>>>>>> bea9cd82b1fd9c20758980f45bde9123a0cd6fab
 
      <uses-permission android:name="android.permission.INTERNET"/>
      <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 ____________________________________________________________________________________________________________________________________________________________
 
-<<<<<<< HEAD
 ####Step 2: Create a simple Textview in the layout.
 =======
 Step 2: Create a simple Textview in the layout.
->>>>>>> bea9cd82b1fd9c20758980f45bde9123a0cd6fab
 
     <TextView
         android:id="@+id/textViewResponse"
@@ -50,7 +43,6 @@ Step 2: Create a simple Textview in the layout.
         android:text="@string/hello_world" />
 ____________________________________________________________________________________________________________________________________________________________
 
-<<<<<<< HEAD
 ####Step 3: Create the main Class to use the objects.
 
 		String readTwitterFeed = readTwitterFeed();
@@ -61,8 +53,7 @@ Step 3: Create the main Class to use the objects.
 
 		String readTwitterFeed = readTwitterFeed();
 	
-	private String readTwitterFeed() {
->>>>>>> bea9cd82b1fd9c20758980f45bde9123a0cd6fab
+		private String readTwitterFeed() {
 		StringBuilder sBuilder = new StringBuilder();
 		HttpClient client = new DefaultHttpClient();
 		HttpGet get = new HttpGet("http://api.androidhive.info/contacts/");
@@ -84,8 +75,3 @@ Step 3: Create the main Class to use the objects.
 		}
 		return sBuilder.toString();
 	}
-
-<<<<<<< HEAD
-
-=======
->>>>>>> bea9cd82b1fd9c20758980f45bde9123a0cd6fab
